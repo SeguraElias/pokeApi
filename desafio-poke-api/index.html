@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar Pokemons</title>
+
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.scss">
+</head>
+
+<body>
+    <div class="row mt-5 m-auto ">
+        <div class="ms-3 col-4">
+            <h1>Buscar pokemon</h1>
+            <input type="text" class="form-control" id="input-buscar">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 ms-4 mt-2">
+            <button class="btn btn-primary" id="btn-buscar">Buscar</button>
+        </div>
+    </div>
+    <div class="row">
+        <main class="flex">
+        </main>
+    </div>
+        <template id="template-card">
+            <div class="row">
+                <div class="col">
+                    <article class="card">
+                        <img src="./images/bg-pattern-card.svg" alt="" class="card-headers" />
+                        <div class="card-body">
+                            <img src="" alt="" class="card-body-img" />
+                            <h1 class="card-body-title">
+                                Nombre: 
+                                <span>id</span>
+                            </h1>
+                            <p class="card-body-text">exp</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-social">
+                                <h3>80K</h3>
+                                <p>Ataque</p>
+                            </div>
+                            <div class="card-footer-social">
+                                <h3>803K</h3>
+                                <p>Especial</p>
+                            </div>
+                            <div class="card-footer-social">
+                                <h3>1.4K</h3>
+                                <p>Def</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </template>
+</body>
+<script src="app.js"></script>
+
+</html>
